@@ -1,5 +1,4 @@
 // HERO SECTION - src/components/Hero.jsx
-// Keep all words exactly as is, just better formatting
 
 export default function Hero() {
   return (
@@ -33,15 +32,15 @@ export default function Hero() {
       <p style={{
         fontSize: '20px',
         color: '#cbd5e1',
-        marginBottom: '40px',
+        marginBottom: '20px',
         fontWeight: '500',
         maxWidth: '800px',
         lineHeight: '1.6'
       }}>
-        Industrial Systems Junior Engineer | Python & JavaScript Developer | Full-Stack Monitoring Specialist
+        Control & Instrumentation Engineer | Industrial Automation Specialist | Python Developer
       </p>
 
-      {/* Main Description - Keep exact words, better spacing */}
+      {/* Main Description */}
       <p style={{
         fontSize: '17px',
         color: '#d1d5db',
@@ -50,7 +49,16 @@ export default function Hero() {
         lineHeight: '1.8',
         letterSpacing: '0.5px'
       }}>
-        I build recruiter-ready apps using Python, React, and Tailwind — backed by 10+ years in instrumentation, PLC programming, and real-time monitoring across RS232/RS485 and Ethernet. My projects bridge hardware reliability with modern software design.
+        I bring 10+ years of hands-on experience in instrumentation, 
+        PLC programming, industrial networking, and automation systems — 
+        combined with modern software development skills in Python and React. 
+        My experience includes SCADA/HMI integration, VPN remote access 
+        (eWON Flexy 205), SQL Server data logging, real-time monitoring, 
+        and industrial communication across RS232, RS485, Ethernet, 
+        and Modbus TCP/RTU environments. I build intelligent monitoring 
+        systems that bridge field hardware with real-time data visibility 
+        across oil & gas, mining, food processing, water treatment, 
+        and manufacturing industries.
       </p>
 
       {/* Call-to-Action Button */}
@@ -67,7 +75,8 @@ export default function Hero() {
       }}
       onMouseOver={(e) => e.target.style.backgroundColor = '#2563eb'}
       onMouseOut={(e) => e.target.style.backgroundColor = '#3b82f6'}
-      onClick={() => document.getElementById('projects').scrollIntoView({behavior: 'smooth'})}>
+      onClick={() => document.getElementById('projects')
+        .scrollIntoView({behavior: 'smooth'})}>
         View My Work
       </button>
     </section>
